@@ -6,12 +6,13 @@
 	email =
 [alias]
 	st = status -s
-	ci = commit
-	cim = "!f() { git commit -a -m '$1'; }; f"
-	cam = "!f() { git add -A && git commit -a -m '$1'; }; f"
+	aa = !git add -A && git st
+	ci = commit -m
 	cl = clone
 	co = checkout
 	br = branch
+	up = !git fetch origin && git rebase origin/master
+	cob = git checkout -b
 	diff = diff --word-diff
 	dc = diff --cached
 	r = reset
