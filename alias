@@ -1,0 +1,8 @@
+alias ..='cd ..'
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -la'
+
+alias tf='terraform'
+alias d='docker'
+alias dsa='for i in `docker ps -q`; do echo -n "Stopping $i: "; docker stop $i; done'
